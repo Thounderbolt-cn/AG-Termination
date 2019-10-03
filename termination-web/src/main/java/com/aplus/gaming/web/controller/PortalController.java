@@ -31,6 +31,7 @@ public class PortalController {
     @GetMapping("/socket/{cid}")
     public ModelAndView socket(@PathVariable String cid) {
         ModelAndView mav=new ModelAndView("/socket");
+//        WSProtocolServer.onOpen();
         mav.addObject("cid", cid);
         return mav;
     }

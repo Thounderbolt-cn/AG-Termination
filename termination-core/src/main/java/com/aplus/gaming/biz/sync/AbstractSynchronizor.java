@@ -7,5 +7,6 @@ package com.aplus.gaming.biz.sync;
  **/
 public abstract class AbstractSynchronizor {
     protected void doOpen(){
+
     };
 }
