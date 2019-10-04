@@ -1,4 +1,4 @@
-package com.aplus.gaming.schedular.utils.utils;
+package com.aplus.gaming.web.utils;
 
 import java.util.HashMap;
 import java.util.Map;

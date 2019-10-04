@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="termination-rpc" />
+        <module name="termination-bean" />
         <module name="termination-common" />
         <module name="termination-core" />
         <module name="termination-web" />
@@ -15,6 +16,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="termination-bean" options="-parameters" />
       <module name="termination-common" options="-parameters" />
       <module name="termination-core" options="-parameters" />
       <module name="termination-rpc" options="-parameters" />

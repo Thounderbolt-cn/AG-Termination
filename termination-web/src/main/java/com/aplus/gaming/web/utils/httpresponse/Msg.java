@@ -1,4 +1,4 @@
-package com.aplus.gaming.schedular.utils.utils.httpresponse;
+package com.aplus.gaming.web.utils.httpresponse;
 
 
 import com.alibaba.fastjson.JSON;

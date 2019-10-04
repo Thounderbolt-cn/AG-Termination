@@ -1,8 +1,9 @@
-package com.aplus.gaming.schedular.vscore;
+package com.aplus.gaming.web.vscore;
 
-import com.aplus.gaming.core.webservice.server.WSProtocolServer;
-import com.aplus.gaming.schedular.constant.FeiJingUrlConstant;
-import com.aplus.gaming.schedular.utils.utils.httprequest.HttpRequestUtil;
+import com.aplus.gaming.web.constant.FeiJingUrlConstant;
+import com.aplus.gaming.web.server.WSProtocolServer;
+import com.aplus.gaming.web.utils.httprequest.HttpRequestUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.Scheduled;
 
@@ -20,6 +21,9 @@ import java.util.Map;
  **/
 @Configuration
 public class VscoreSchedulingTask {
+
+    @Autowired
+    private WSProtocolServer wsProtocolServer;
 
     @Scheduled(cron = "0/15 * * * * ?")
     public void runTask() throws IOException {
@@ -42,8 +46,8 @@ public class VscoreSchedulingTask {
         params.put("version","2");
         System.out.println(Thread.currentThread().getName()+"  "+ LocalDateTime.now(ZoneId.systemDefault()));
         //获取赛事信息
-        String result = HttpRequestUtil.httpRequest(FeiJingUrlConstant.domian,FeiJingUrlConstant.leagueListUrl,"GET",params,"");
-        WSProtocolServer.sendInfo(result,"lolLeaguaList");
+        String result = HttpRequestUtil.httpRequest(FeiJingUrlConstant.domian, FeiJingUrlConstant.leagueListUrl,"GET",params,"");
+        wsProtocolServer.sendInfo(result,"lolLeaguaList");
     }
 
     /**
@@ -59,7 +63,7 @@ public class VscoreSchedulingTask {
         System.out.println(Thread.currentThread().getName()+"  "+ LocalDateTime.now(ZoneId.systemDefault()));
         //获取赛事信息
         String result = HttpRequestUtil.httpRequest(FeiJingUrlConstant.domian,FeiJingUrlConstant.recentlyLeaguaUrl,"GET",params,"");
-        WSProtocolServer.sendInfo(result,"lolRecentlyLeagua");
+        wsProtocolServer.sendInfo(result,"lolRecentlyLeagua");
     }
     /**
      * 获取最近赛事情况
@@ -71,7 +75,7 @@ public class VscoreSchedulingTask {
         System.out.println(Thread.currentThread().getName()+"  "+ LocalDateTime.now(ZoneId.systemDefault()));
         //获取赛事信息
         String result = HttpRequestUtil.httpRequest(FeiJingUrlConstant.domian,FeiJingUrlConstant.lolMatchRecentLyUrl,"GET",params,"");
-        WSProtocolServer.sendInfo(result,"lolMatchRecently");
+        wsProtocolServer.sendInfo(result,"lolMatchRecently");
     }
 
     /**
@@ -84,7 +88,7 @@ public class VscoreSchedulingTask {
         System.out.println(Thread.currentThread().getName()+"  "+ LocalDateTime.now(ZoneId.systemDefault()));
         //获取赛事信息
         String result = HttpRequestUtil.httpRequest(FeiJingUrlConstant.domian,FeiJingUrlConstant.lolMatchFinalScoreUrl,"GET",params,"");
-        WSProtocolServer.sendInfo(result,"lolMatchFinalScore");
+        wsProtocolServer.sendInfo(result,"lolMatchFinalScore");
     }
     /**
      * 获取直播比赛分数
@@ -96,7 +100,7 @@ public class VscoreSchedulingTask {
         System.out.println(Thread.currentThread().getName()+"  "+ LocalDateTime.now(ZoneId.systemDefault()));
         //获取赛事信息
         String result = HttpRequestUtil.httpRequest(FeiJingUrlConstant.domian,FeiJingUrlConstant.lolMatchLiveScoreUrl,"GET",params,"");
-        WSProtocolServer.sendInfo(result,"lolMatchLiveScore");
+        wsProtocolServer.sendInfo(result,"lolMatchLiveScore");
     }
 
     /**
@@ -109,7 +113,7 @@ public class VscoreSchedulingTask {
         System.out.println(Thread.currentThread().getName()+"  "+ LocalDateTime.now(ZoneId.systemDefault()));
         //获取赛事信息
         String result = HttpRequestUtil.httpRequest(FeiJingUrlConstant.domian,FeiJingUrlConstant.lolMatchBetInfoUrl,"GET",params,"");
-        WSProtocolServer.sendInfo(result,"lolMatchLiveScore");
+        wsProtocolServer.sendInfo(result,"lolMatchLiveScore");
     }
 
 
@@ -123,7 +127,7 @@ public class VscoreSchedulingTask {
         System.out.println(Thread.currentThread().getName()+"  "+ LocalDateTime.now(ZoneId.systemDefault()));
         //获取赛事信息
         String result = HttpRequestUtil.httpRequest(FeiJingUrlConstant.domian,FeiJingUrlConstant.lolMatchLiveBattleUrl,"GET",params,"");
-        WSProtocolServer.sendInfo(result,"lolMatchLiveBattle");
+        wsProtocolServer.sendInfo(result,"lolMatchLiveBattle");
     }
 
 }

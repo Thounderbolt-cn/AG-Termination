@@ -1,4 +1,4 @@
-package com.aplus.gaming.schedular.constant;
+package com.aplus.gaming.web.constant;
 
 public interface FeiJingUrlConstant {
 

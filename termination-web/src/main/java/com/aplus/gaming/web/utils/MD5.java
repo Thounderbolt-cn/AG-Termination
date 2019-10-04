@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.aplus.gaming.schedular.utils.utils;
+package com.aplus.gaming.web.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

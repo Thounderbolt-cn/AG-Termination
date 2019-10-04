@@ -1,4 +1,4 @@
-package com.aplus.gaming.core.webservice.server;
+package com.aplus.gaming.web.server;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,8 +15,8 @@ import java.util.concurrent.CopyOnWriteArraySet;
  * @version V1.0
  * @date 2019/9/16 0016
  **/
-@ServerEndpoint("/websocket/{sid}")
 @Component
+@ServerEndpoint("/websocket/{sid}")
 public class WSProtocolServer {
 
     private static final Logger logger = LoggerFactory.getLogger(WSProtocolServer.class);
@@ -44,7 +44,7 @@ public class WSProtocolServer {
     /**
      * 群发自定义消息
      */
-    public static void sendInfo(String message, @PathParam("sid") String sid) throws IOException {
+    public  void sendInfo(String message, @PathParam("sid") String sid) throws IOException {
         logger.info("推送消息到窗口" + sid + "，推送内容:" + message);
         for (WSProtocolServer item : webSocketSet) {
             try {

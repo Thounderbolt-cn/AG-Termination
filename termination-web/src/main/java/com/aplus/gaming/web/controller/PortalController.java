@@ -1,6 +1,6 @@
 package com.aplus.gaming.web.controller;
 
-import com.aplus.gaming.core.webservice.server.WSProtocolServer;
+import com.aplus.gaming.web.server.WSProtocolServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,7 +21,7 @@ import java.io.IOException;
 public class PortalController {
 
     @Autowired
-    private WSProtocolServer WSProtocolServer;
+    private WSProtocolServer wsProtocolServer;
 
     /**
      * 页面请求
@@ -46,7 +46,7 @@ public class PortalController {
     @RequestMapping("/socket/push/{cid}")
     public Object pushToWeb(@PathVariable String cid,String message) {
         try {
-            WSProtocolServer.sendInfo(message,cid);
+            wsProtocolServer.sendInfo(message,cid);
         } catch (IOException e) {
             e.printStackTrace();
             return new Object();

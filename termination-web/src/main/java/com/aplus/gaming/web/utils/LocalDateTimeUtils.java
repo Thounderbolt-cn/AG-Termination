@@ -1,4 +1,4 @@
-package com.aplus.gaming.schedular.utils.utils;
+package com.aplus.gaming.web.utils;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

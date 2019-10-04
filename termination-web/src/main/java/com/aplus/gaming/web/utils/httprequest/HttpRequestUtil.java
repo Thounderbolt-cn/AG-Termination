@@ -1,9 +1,8 @@
-package com.aplus.gaming.schedular.utils.utils.httprequest;
+package com.aplus.gaming.web.utils.httprequest;
 
 import com.alibaba.fastjson.JSONObject;
-import com.aplus.gaming.schedular.constant.Constant;
-import com.aplus.gaming.schedular.constant.FeiJingUrlConstant;
-import com.aplus.gaming.schedular.utils.utils.MD5;
+import com.aplus.gaming.web.constant.Constant;
+import com.aplus.gaming.web.utils.MD5;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +11,6 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.ResourceHttpMessageConverter;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-import org.springframework.util.DigestUtils;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.RequestMethod;
