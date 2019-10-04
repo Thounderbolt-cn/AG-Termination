@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaa0c743-8584-44f0-b3b1-1cb9b294e755" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/termination-core/target/classes/META-INF/termination-core.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/termination-core/termination-core.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/termination-web/src/main/java/com/aplus/gaming/web/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/termination-web/src/main/java/com/aplus/gaming/web/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/termination-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/termination-web/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/termination-web/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/termination-web/target/classes/application.properties" afterDir="false" />
     </list>
@@ -31,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="heisenberg-wf &lt;55394918+heisenberg-wf@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -51,13 +52,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/termination-web/src/main/webapp/js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Workspace\poj-2019\Aplus-GamingTermination\AG-Termination\termination-web\src\main\webapp\js" />
+      <recent name="F:\Workspace\poj-2019\Aplus-GamingTermination\AG-Termination\termination-web\src\main\webapp\css" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -93,8 +100,16 @@
       <workItem from="1568769114151" duration="874000" />
       <workItem from="1568909342211" duration="1085000" />
       <workItem from="1569075146291" duration="357000" />
-      <workItem from="1569118758452" duration="754000" />
+      <workItem from="1569118758452" duration="9301000" />
     </task>
+    <task id="LOCAL-00001" summary="fix controller config">
+      <created>1569155226519</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569155226520</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,5 +157,11 @@
         <option value="1" />
       </set>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="fix controller config" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix controller config" />
   </component>
 </project>

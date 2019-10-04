@@ -44,6 +44,12 @@
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>2.1.8.RELEASE</version>
             </dependency>
+
+            <!-- 3、添加thymeleaf依赖 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            </dependency>
             <!--websocket-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
