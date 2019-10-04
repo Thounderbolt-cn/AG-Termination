@@ -34,7 +34,7 @@ public class HttpRequestUtil {
         params.put("version","2");
 
 
-        httpRequest(FeiJingUrlConstant.domian,FeiJingUrlConstant.yxlmUrl,"GET",params,"");
+//        httpRequest(FeiJingUrlConstant.domian,FeiJingUrlConstant.yxlmUrl,"GET",params,"");
     }
 
     /**
