@@ -113,7 +113,7 @@ public class VscoreSchedulingTask {
         System.out.println(Thread.currentThread().getName()+"  "+ LocalDateTime.now(ZoneId.systemDefault()));
         //获取赛事信息
         String result = HttpRequestUtil.httpRequest(FeiJingUrlConstant.domian,FeiJingUrlConstant.lolMatchBetInfoUrl,"GET",params,"");
-        wsProtocolServer.sendInfo(result,"lolMatchLiveScore");
+        wsProtocolServer.sendInfo(result,"lolMatchBet");
     }
 
 

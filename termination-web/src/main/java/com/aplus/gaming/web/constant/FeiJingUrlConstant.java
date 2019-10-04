@@ -8,7 +8,7 @@ public interface FeiJingUrlConstant {
         String leagueListUrl ="/data-service/lol/league/list";
 
         //近期联赛信息
-        String recentlyLeaguaUrl = "/data-service/lol/league/recently?version=2";
+        String recentlyLeaguaUrl = "/data-service/lol/league/recently";
 
         //近期赛事信息
         String  lolMatchRecentLyUrl = "/data-service/lol/match/recently";
@@ -21,7 +21,7 @@ public interface FeiJingUrlConstant {
         String  playerBasicInfoUrl = "/data-service/lol/player/basic_info";
 
         //对局即时比分
-        String lolMatchLiveScoreUrl =  "/data-service/lol/match/live_score?version=2";
+        String lolMatchLiveScoreUrl =  "/data-service/lol/match/live_score";
 
         //比赛赔率信息
         String lolMatchBetInfoUrl = "/data-service/lol/match/bet_info";
