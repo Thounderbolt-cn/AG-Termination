@@ -30,7 +30,8 @@ public class VscoreSchedulingTask {
         //获取联赛信息
         getLeagueListInfo();
 
-
+        getRecentlyLeaguaInfo();
+        getLolMatchRecentLyInfo();
         return;
     }
 
@@ -47,6 +48,9 @@ public class VscoreSchedulingTask {
         System.out.println(Thread.currentThread().getName()+"  "+ LocalDateTime.now(ZoneId.systemDefault()));
         //获取赛事信息
         String result = HttpRequestUtil.httpRequest(FeiJingUrlConstant.domian, FeiJingUrlConstant.leagueListUrl,"GET",params,"");
+
+
+
         wsProtocolServer.sendInfo(result,"lolLeaguaList");
     }
 
@@ -72,6 +76,9 @@ public class VscoreSchedulingTask {
     private void getLolMatchRecentLyInfo() throws IOException {
         //获取联赛信息
         Map params = new HashMap<String,String>();
+        params.put("offset","0");
+        params.put("limit","20");
+        params.put("version","2");
         System.out.println(Thread.currentThread().getName()+"  "+ LocalDateTime.now(ZoneId.systemDefault()));
         //获取赛事信息
         String result = HttpRequestUtil.httpRequest(FeiJingUrlConstant.domian,FeiJingUrlConstant.lolMatchRecentLyUrl,"GET",params,"");

@@ -16,6 +16,17 @@ public interface FeiJingUrlConstant {
         //赛事最终比分
         String  lolMatchFinalScoreUrl = "/data-service/lol/match/final_score";
 
+        //赛事前瞻分析
+        String lolMatchProspect = "/data-service/lol/match/prospect";
+
+        //赛事
+        String lolMatchBasicInfo = "/data-service/lol/match/basic_info";
+
+        //战队信息
+        String lolTeamList = "/data-service/lol/team/list";
+
+        //战队成员列表
+        String lolTeamPlayersList = "/data-service/lol/team/players";
 
         //选手基本信息
         String  playerBasicInfoUrl = "/data-service/lol/player/basic_info";
